@@ -1,0 +1,312 @@
+/* flex布局 */
+.flex {
+  display: flex;
+}
+
+
+/* // 主轴起点对齐 */
+.flex-justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* // 主轴居中对齐 */
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* // 主轴终点对齐 */
+.flex-justify-end {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+/* // 主轴两端对齐，项目之间的间隔都相等 */
+.flex-justify-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* // 主轴每个项目两侧的间隔相等 */
+.flex-justify-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* // 辅轴起点对齐 */
+.flex-align-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* // 辅轴居中对齐 */
+.flex-align-center {
+  display: flex !important;
+  align-items: center;
+}
+
+/* // 辅轴终点对齐 */
+.flex-align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* // y轴为主轴, x轴为辅轴 */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* // 主副轴都居中 */
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 允许换行 */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* element ui  样式 */
+.el-drawer__open .el-drawer.rtl {
+  width: 88% !important;
+}
+
+.el-drawer__body {
+  overflow: auto;
+
+}
+
+.el-loading-mask {
+  z-index: 999999999999999999 !important;
+}
+
+//用于动态计算表格列宽的样式
+.el-table .cell {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  width: auto !important;
+  overflow: auto !important;
+}
+
+.el-table th.gutter {
+  display: table-cell !important;
+}
+
+
+.el-form-item {
+  width: 33.33%;
+  margin-bottom: 0px !important;
+
+}
+
+.el-input {
+  min-width: 100px !important;
+  padding-left: 10px;
+  box-sizing: border-box !important;
+}
+
+.el-form-item__error {
+  padding: 0 !important;
+}
+
+.el-input__inner {
+  height: 30px !important;
+  font-weight: 600;
+  color: #000 !important;
+  padding-left: 15px !important;
+}
+
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 100% !important;
+}
+
+.el-input__inner:focus {
+  background-color: #ecf5ff;
+}
+
+.el-input.is-disabled .el-input__inner {
+  color: #99A !important;
+}
+
+.el-select {
+  width: 100%;
+}
+
+.el-drawer__body {
+  padding: 0 20px;
+}
+
+.el-dialog__body {
+  padding: 0 20px 30px 20px !important;
+}
+
+
+
+.el-input__inner:focus {
+  background-color: #ecf5ff;
+}
+
+.el-drawer__header {
+  margin-bottom: 0 !important;
+  padding: 5px 20px 0 !important;
+}
+
+.el-button span {
+  margin-left: 2px;
+}
+
+.el-scrollbar__wrap {
+  overflow-x: hidden;
+}
+
+.el-table--scrollable-x .el-table__body-wrapper {
+  z-index: 1;
+}
+
+
+
+.el-input.is-disabled .el-input__inner {
+  background-color: #fff !important;
+}
+
+.el-table .cell {
+  padding: 0;
+}
+
+.el-table td {
+  padding: 2px 0 !important;
+}
+
+.el-table th {
+  padding: 0 !important;
+}
+
+.el-table__body tr.current-row>td {
+  background: skyblue !important;
+}
+
+//解决页面出现抖动的问题
+.el-table {
+  width: 99.9% !important;
+}
+
+// 配置elementui 固定列行向线对不齐
+/deep/ .el-table {
+  .el-table__fixed,
+  .el-table__fixed-right {
+    height: 100% !important;
+  }
+
+  &.el-table--fluid-height {
+    &.el-table--scrollable-y {
+      .el-table__fixed-body-wrapper {
+        bottom: 1px;
+        max-height: none !important;
+      }
+
+      &.el-table--scrollable-x {
+        .el-table__fixed-body-wrapper {
+          bottom: 18.5px; // 这里的高度如果写的比较小 ie会不兼容
+          max-height: none !important;
+        }
+      }
+    }
+  }
+}
+
+.el-menu-item {
+  height: 30px !important;
+  line-height: 30px !important;
+}
+
+.el-submenu__title {
+  height: 38px !important;
+  line-height: 38px !important;
+}
+
+.el-menu-item-group__title {
+  padding: 0 !important;
+}
+
+.el-scrollbar__bar.is-vertical {
+  width: 20px !important;
+}
+
+/* button dark颜色 */
+.dark-button {
+  background-color: #409EFF !important;
+  color: #fff !important;
+}
+
+.light-button {
+  background-color: #67C23A !important;
+  color: #fff !important;
+}
+
+.dark-text {
+  color: #409EFF !important;
+}
+
+.light-text {
+  color: #67C23A !important;
+}
+
+
+
+/*  表格的宽高 */
+.height-80 {
+  width: 100%;
+  max-height: 70%;
+  overflow: auto;
+}
+
+/* // 分割线 */
+.line {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.btns {
+  position: fixed;
+  top: 25px;
+  z-index: 11;
+  height: 40px;
+  width: 100%;
+}
+
+.form-margin {
+  margin: 40px 0 20px 0px;
+
+}
+
+.page {
+  position: relative;
+  margin: 15px 0px 0px 0px;
+  width: 100%;
+}
+
+.padd {
+  padding: 0 20px;
+}
+
+.title {
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.search-title {
+  white-space: nowrap;
+  margin-right: 20px;
+  width: 23%;
+  margin-top: 10px;
+
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <title>老邻居物流管理系统平台</title>
+  <link rel="shortcut icon" type="image/x-icon" href="static/bitbug_favicon.ico">
+  <script>
+    //时时获取称重拣货的数量
+    function getData(val) {
+      window.localStorage.setItem("num", val)
+    }
+    window.onload = function () {
+      // js判断是否是IE内核
+      function isIE() {
+        var DEFAULT_VERSION = 9.0
+        var ua = navigator.userAgent.toLowerCase()
+        var isIE = ua.indexOf("msie") > -1
+        var safariVersion
+        if (isIE) {
+          safariVersion = ua.match(/msie ([\d.]+)/)[1]
+        }
+
+        if (safariVersion <= DEFAULT_VERSION) {
+          return true
+        } else {
+          return false
+        }
+      }
+      if (isIE()) {
+        console.log(123, 'isie');
+        var iePage = document.getElementById("iePage")
+        var appPage = document.getElementById("app")
+        iePage.style.display = "block"
+        appPage.style.display = "none"
+      }
+    }
+
+  </script>
+  <style>
+    #iePage {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 500px;
+      height: 200px;
+      margin-left: -250px;
+      margin-top: -100px;
+    }
+
+    #iePage .title {
+      font-size: 14px;
+      width: 480px;
+      height: 30px;
+      background-color: #656e73;
+      padding-left: 20px;
+      color: #fff;
+      line-height: 30px;
+      text-align: left;
+    }
+
+    .i_browserTips {
+      background-color: #fff;
+      text-align: center;
+      color: #333;
+      padding: 50px 30px 50px 30px;
+    }
+
+
+    .i_browserTips>p {
+      font-size: 18px;
+      /* line-height: normal; */
+      line-height: 30px;
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- 判断是否是IE内核 -->
+  <div id="iePage" style="display: none;">
+    <div class="title">提示</div>
+    <div class="i_browserTips">
+      <p>检测判断您的IE浏览器版本过低，为确保体验请使用10.0以上IE版本或其他浏览器打开网站。</p>
+    </div>
+
+
+  </div>
+  <div id="app"></div>
+
+
+</body>
+
+</html>
